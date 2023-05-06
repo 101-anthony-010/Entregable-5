@@ -107,7 +107,7 @@ const PokemonId = () => {
                 </section>
             </article>
 
-            <article className='mt-10 shadow-2xl border-[1px] border-white'>
+            <article className='mt-10 border-[1px] border-white'>
                 <section className='max-w-[900px] mx-auto shadow-xl p-6'>
                     <div className='grid grid-cols-[auto_1fr] items-center gap-2 mb-6'>
                         <h3 className='px-4 font-bold text-3xl'>Movements</h3>

@@ -118,14 +118,14 @@ const Pokedex = () => {
         }
       </section>
       <section>
-      <ul className='flex gap-3 justify-center p-4'>
-        <li onClick={() => setCurrentPage(1)} className='rounded-sm p-3 bg-red-600 text-white cursor-pointer'>{"<<"}</li>
-        <li onClick={handleClickPreviusPage} className={`p-3 bg-red-600 text-white cursor-pointer rounded-sm`}>{"<"}</li>
+      <ul className='flex gap-1 justify-center p-4'>
+        <li onClick={() => setCurrentPage(1)} className='rounded-sm px-2 py-1 bg-red-600 text-white cursor-pointer'>{"<<"}</li>
+        <li onClick={handleClickPreviusPage} className={`px-2 py-1 bg-red-600 text-white cursor-pointer rounded-sm`}>{"<"}</li>
         {
-          pagesInBlock?.map(numberPage => (<li onClick={() => setCurrentPage(numberPage)} className={`${numberPage === currentPage ? 'bg-red-400': ''} rounded-sm p-3 bg-red-600 text-white cursor-pointer`} key={numberPage}>{numberPage}</li>))
+          pagesInBlock?.map(numberPage => (<li onClick={() => setCurrentPage(numberPage)} className={`${numberPage === currentPage ? 'bg-red-400': ''} rounded-sm px-2 py-1 bg-red-600 text-white cursor-pointer`} key={numberPage}>{numberPage}</li>))
         }
-        <li onClick={handleClickNextPage} className='rounded-sm p-3 bg-red-600 text-white cursor-pointer'>{">"}</li>
-        <li onClick={() => setCurrentPage(lastPage)} className='rounded-sm p-3 bg-red-600 text-white cursor-pointer'>{">>"}</li>
+        <li onClick={handleClickNextPage} className='rounded-sm px-2 py-1 bg-red-600 text-white cursor-pointer'>{">"}</li>
+        <li onClick={() => setCurrentPage(lastPage)} className='rounded-sm px-2 py-1 bg-red-600 text-white cursor-pointer'>{">>"}</li>
       </ul>
       </section>
     </section>
